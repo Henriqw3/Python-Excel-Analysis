@@ -1,0 +1,35 @@
+*+*+*+*+*+*+*+* STUDENT REPORT *+*+*+*+*+*+*+*
+
+>> Matéria 1 : 
+
+	Total de 34.1 pontos necessários para passar.
+	Total de 26 dias para a próxima prova.
+
+>> Matéria 2 : 
+
+	Total de 8.5 pontos necessários para passar.
+	Total de 36 dias para a próxima prova.
+
+	Não haverá prova SUB!
+
+>> Matéria 3 : 
+
+	Total de 24 pontos necessários para passar.
+	Total de 44 dias para a próxima prova.
+
+>> Matéria 4 : 
+
+	Total de 32 pontos necessários para passar.
+	Total de 21 dias para a próxima prova.
+
+	Não haverá prova SUB!
+
+>> Matéria 5 : 
+
+	Total de 118 pontos necessários para passar.
+	Total de 19 dias para a próxima prova.
+
+>> Matéria 6 : 
+
+	Total de 8 pontos necessários para passar.
+	Total de 42 dias para a próxima prova.

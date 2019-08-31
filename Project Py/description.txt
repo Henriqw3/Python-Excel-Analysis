@@ -1,0 +1,62 @@
+"""
+f1º Exercício Dev-Backend
+
+O arquivo Excel (.xlsx) possui 3 sheets(abas) diferentes para um aluno.
+- 1º:  As datas de cada prova das suas 6 matérias.
+- 2º: Os valores de cada uma delas.
+- 3º: Todas as notas que tirou até o dia atual (14/06/2019).
+
+	Steps:
+--->> Extrair os dados e gravar em um arquivo o status de cada uma das matérias;
+	status: - Quantos dias ele tem para estudar para a próxima prova
+					- Quantos pontos faltam p/ tirar o mínimo p/ passar e se será necessário a SUB
+					- Caso for necessário SUB:
+					- Quantos pontos no mínimo o aluno precisa
+					-Se nenhuma dessas opções der certo, deve-se mostrar que ele está reprovado ou aprovado.
+
+    1. O mínimo para passar na matéria é 60.
+    2. Há matérias cujas provas valem 100, nesse caso, a pontuação final é a média das 3 provas. 
+    3. O estilo da prova substitutiva está descrito de 3 formas diferentes
+        a. 100 pontos e faz a média com as notas anteriores.
+        b. Não tem SUB (meio sugestivo...).
+        c. Valor da menor nota, substitui a prova (com o mesmo valor) em que o aluno tirou a menor nota e refaz a média.
+"""
+
+Dados struct
+
+{'Datas': {'Matéria 1': {'P1': datetime.date(2019, 3, 15), 
+												 'P2': datetime.date(2019, 5, 25), 
+												 'P3': datetime.date(2019, 7, 10), 
+												 'SUB': datetime.date(2019, 7, 12)}, 
+					 'Matéria 2': {'P1': datetime.date(2019, 3, 19), 
+												 'P2': datetime.date(2019, 5, 3), 
+												 'P3': datetime.date(2019, 7, 20), 
+												 'SUB': datetime.date(2019, 7, 22)}, 
+					 'Matéria 3': {'P1': datetime.date(2019, 3, 5), 
+												 'P2': datetime.date(2019, 5, 13), 
+												 'P3': datetime.date(2019, 7, 28), 
+												 'SUB': datetime.date(2019, 7, 30)}, 
+					 'Matéria 4': {'P1': datetime.date(2019, 3, 22), 
+												 'P2': datetime.date(2019, 5, 15), 
+												 'P3': datetime.date(2019, 7, 5), 
+												 'SUB': datetime.date(2019, 7, 7)}, 
+					 'Matéria 5': {'P1': datetime.date(2019, 3, 26), 
+												 'P2': datetime.date(2019, 5, 28), 
+												 'P3': datetime.date(2019, 7, 3), 
+												 'SUB': datetime.date(2019, 7, 6)}, 
+					 'Matéria 6': {'P1': datetime.date(2019, 3, 9), 
+												 'P2': datetime.date(2019, 5, 5), 
+												 'P3': datetime.date(2019, 7, 26), 
+												 'SUB': datetime.date(2019, 7, 29)}}, 
+ 'Valores': {'Matéria 1': {'P1': 30, 'P2': 30, 'P3': 40, 'SUB': 'Valor da menor nota'}, 
+ 						 'Matéria 2': {'P1': 35, 'P2': 35, 'P3': 30, 'SUB': 'Não tem sub'}, 
+						 'Matéria 3': {'P1': 100, 'P2': 100, 'P3': 100, 'SUB': 100}, 
+						 'Matéria 4': {'P1': 30, 'P2': 30, 'P3': 40, 'SUB': 'Não tem sub'}, 
+						 'Matéria 5': {'P1': 100, 'P2': 100, 'P3': 100, 'SUB': 100}, 
+						 'Matéria 6': {'P1': 35, 'P2': 35, 'P3': 30, 'SUB': 'Valor da menor nota'}}, 
+ 'Notas': {'Matéria 1': {'P1': 25.9, 'P2': None, 'P3': None, 'SUB': None}, 
+ 					 'Matéria 2': {'P1': 20.5, 'P2': 31, 'P3': None, 'SUB': None}, 
+						'Matéria 3': {'P1': 84, 'P2': 72, 'P3': None, 'SUB': None}, 
+						'Matéria 4': {'P1': 28, 'P2': None, 'P3': None, 'SUB': None}, 
+						'Matéria 5': {'P1': 62, 'P2': None, 'P3': None, 'SUB': None}, 
+						'Matéria 6': {'P1': 18, 'P2': 34, 'P3': None, 'SUB': None}}}
