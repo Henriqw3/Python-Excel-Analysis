@@ -1,5 +1,7 @@
 """
-f1º Exercício Dev-Backend
+Descrição:
+
+f1º Exercício Roadmap Dev-Backend:
 
 O arquivo Excel (.xlsx) possui 3 sheets(abas) diferentes para um aluno.
 - 1º:  As datas de cada prova das suas 6 matérias.
@@ -20,10 +22,13 @@ O arquivo Excel (.xlsx) possui 3 sheets(abas) diferentes para um aluno.
         a. 100 pontos e faz a média com as notas anteriores.
         b. Não tem SUB (meio sugestivo...).
         c. Valor da menor nota, substitui a prova (com o mesmo valor) em que o aluno tirou a menor nota e refaz a média.
+_____________________________________________________________________________________
+
+
+
 """
-
+Rascunho
 Dados struct
-
 {'Datas': {'Matéria 1': {'P1': datetime.date(2019, 3, 15), 
 												 'P2': datetime.date(2019, 5, 25), 
 												 'P3': datetime.date(2019, 7, 10), 

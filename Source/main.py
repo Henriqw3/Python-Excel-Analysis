@@ -58,7 +58,7 @@ def dataExtract(xlsx, name_sheet):
 													f'{space.cell(row=1, column=chip).value}'] = datetime(int(dte[0]), int(dte[1]) , int(dte[2])).date()
 	return data
 
-############## ******************* ################
+
 ##############    DATA ANALYSIS    ################
 
 def analyseDate (dates):
@@ -183,7 +183,7 @@ def analyseSituation(dates, test_values, points_left):
 		return situation 
 	except:
 		return 'Error Values:\n\tDictionaries do not have the same structure\n\t>>Keys must match<<'
-############## ******************* ################
+
 ##############   ANALYSIS REPORT   ################
 
 def passFile(dates,pts_left,situation, values_test):
@@ -221,4 +221,4 @@ wb = openpyxl.load_workbook('provas.xlsx')#Arquivo xlsx
 
 dataSheet = dataStruct(wb, data = True)#Dados extraídos
 
-report = finalCommands(dataSheet)
+finalCommands(dataSheet)
